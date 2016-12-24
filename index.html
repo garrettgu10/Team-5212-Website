@@ -3,17 +3,20 @@
    <head>
       <title>Hello world</title>
       <!--Import Google Icon Font-->
-      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="css/5212.css" />
+      <link type="text/css" rel="stylesheet" href="css/jquery-ui.min.css" />
 
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
    </head>
    <body>
       <!--Import jQuery before materialize.js-->
-      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script type="text/javascript" src="js/jquery-ui.min.js"></script>
       <script type="text/javascript" src="js/init.js"></script>
       <nav>
          <div class="nav-wrapper blue lighten-3">
@@ -27,12 +30,19 @@
          </div>
       </nav>
 
-      <div class="parallax-container" style="height: 600px">
-         <div class="parallax"><img src="img/robot.jpg"></img></div>
-         <center>
-            <h1 style="margin-top: 225px; color:white;">Team 5212</h1>
-            <h4 style="margin-top: 10px; color:white">wait -- what's our motto again?</h4>
-         </center>
+      <div>
+         <div style="position:relative">
+            <img src="img/robot.jpg" style="width: 100%"></img>
+            <a href="http://www.google.com">
+               <div class="badge unhovered1" style="top:20%; left:20%">
+                  <div class="badgetitle">hey</div>
+               </div>
+               <div class="badge hovered hovered1" style="opacity:0; top:20%; left:20%">
+                  <div class="badgetitle" style="color:#000">Bring me to Google!</div>
+               </div>
+            </a>
+         </div>
+
       </div>
       <div class="container">
 
