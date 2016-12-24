@@ -16,49 +16,52 @@
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
-      <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+      <script type="text/javascript" src="js/jquery.scrollfire.min.js"></script>
       <script type="text/javascript" src="js/init.js"></script>
-      <nav>
-         <div class="nav-wrapper blue lighten-3">
-            <a href="#" class="brand-logo">&nbsp;&nbsp;Team 5212</a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-               <li><a>About</a></li>
-               <li><a>FAQ</a></li>
-               <li><a>Other section</a></li>
-               <a class="waves-effect waves-light btn red">donate</a>
-            </ul>
-         </div>
-      </nav>
+      <div class="navbar-fixed">
+         <nav>
+            <div class="nav-wrapper green lighten-2">
+               <a href="#" class="brand-logo">&nbsp;&nbsp;Team 5212</a>
+               <ul id="nav-mobile" class="right hide-on-med-and-down">
+                  <li class="about nav"><a href="#" onclick="javascript:scrollTo('about')">About</a></li>
+                  <li class="outreach nav"><a href="#" onclick="javascript:scrollTo('outreach')">Outreach</a></li>
+                  <li><a>Other section</a></li>
+                  <a class="waves-effect waves-light btn red">donate</a>
+               </ul>
+            </div>
+         </nav>
+      </div>
+
+
 
       <div>
          <div style="position:relative">
             <img src="img/robot.jpg" style="width: 100%"></img>
-            <a href="#" onclick='javascript:scrollTo("about")'>
-               <div class="badge unhovered1" style="top:60%; left:35%">
+            <a href="#" class="badge-container" onclick='javascript:scrollTo("about")'>
+               <div class="badge unhovered" style="top:60%; left:35%">
                   <div class="badgetitle">About</div>
                </div>
-               <div class="badge hovered hovered1" style="opacity:0; top:60%; left:35%">
-                  <div class="badgetitle" style="color:#000; padding-top: 73px;">Learn more about our team in general</div>
+               <div class="badge hovered" style="opacity:0; top:60%; left:35%">
+                  <div class="badgetitle" style="color:#000; padding-top: 80px; font-size:13px">Learn more about our team in general</div>
                </div>
             </a>
-            <a href="#" onclick='javascript:scrollTo("outreach")'>
-               <div class="badge unhovered2" style="top:20%; left:20%">
+            <a href="#" class="badge-container" onclick='javascript:scrollTo("outreach")'>
+               <div class="badge unhovered" style="top:20%; left:20%">
                   <div class="badgetitle">Outreach</div>
                </div>
-               <div class="badge hovered hovered2" style="opacity:0; top:20%; left:20%">
-                  <div class="badgetitle" style="color:#000; padding-top: 73px;">Learn more about our outreach endeavors</div>
+               <div class="badge hovered" style="opacity:0; top:20%; left:20%">
+                  <div class="badgetitle" style="color:#000; padding-top: 80px; font-size:13px">Learn more about our outreach endeavors</div>
                </div>
             </a>
          </div>
 
       </div>
       <div class="container">
-
-         <h2 class="about-header">About</h2>
+         <h2 class="about header">About</h2>
          <p class="flow-text">
             Our team is an extracurricular group of students. We all go to the Texas Academy of Mathematics and Science. TAMS is a unique residential program for high school-aged Texas students who are high achievers and interested in mathematics and science. While living in McConnell Hall, students in this two-year program complete a rigorous academic curriculum of college coursework at the University of North Texas (UNT). Instruction is by regular university faculty. There are no high school courses taught, but students enjoy many of the activities of high school and the company of age mates who are intellectual peers.
          </p>
-         <h2 class="outreach-header">Outreach</h2>
+         <h2 class="outreach header">Outreach</h2>
          <p class="flow-text">
             Our robotics team greatly prioritizes integration with the district and regional community because, as part of a school of students that have shown excellence and interest in the STEM field, it has roots much further than engineering and science itself. For many of our teammates, the club is a chance to connect and help students explore STEM and truly have a chance to learn from it. For many of us, opportunities at our previous institutions for STEM were limited, if at all present. Now, we have the opportunity and obligation to educate, inspire and help the rising generation of students into engineering.
             <br /> <br />Unfortunately, there are a few local schools that cannot afford extra science experiments in the curriculum. However, the Junior Engineering Technical Society or JETS club (robotics is a subset of this) at TAMS, has a program where we create and send STEM boxes to local elementary schools. These boxes contain small, informative experiments that children conduct. Each box caters to a different scientific law or theory or phenomenon and they all come with well-written explanations with pictures, so students can understand the science behind the principle being demonstrated. The boxes are also set on schedule with each school's curriculum. By coordinating with teachers, we maximize the students' knowledge about a subject because they learn about it in class and they get to see firsthand experiments about the subject too.

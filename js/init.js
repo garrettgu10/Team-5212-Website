@@ -1,29 +1,37 @@
 
-$(document).ready(function(){
-   for(var i = 1; i <= 2; i++){
-      $('.unhovered'+i).on("mouseenter",function(){
-         $(this).css("opacity",0);
-         $(this).next().css("opacity",1);
-         $(this).next().css("transform","scale(1,1)");
-      });
-      $('.hovered'+i).on("mouseleave",function(){
-         $(this).prev().css("opacity",1);
-         $(this).css("opacity",0);
-         $(this).css("transform","scale(0,0)");
-      });
-   }
-   /*$('.unhovered2').on("mouseenter",function(){
-      $('.unhovered2').css("opacity",0);
-      $('.hovered2').css("opacity",1);
-      $('.hovered2').css("transform","scale(1,1)");
+$(window).on("load", function(){
+   $('.badge-container').on("mouseenter",function(){
+      $(this).children(".unhovered").css("opacity",0);
+      $(this).children(".hovered").css("opacity",1);
+      $(this).children(".hovered").css("transform","scale(1.5,1.5)");
    });
-   $('.hovered2').on("mouseleave",function(){
-      $('.unhovered2').css("opacity",1);
-      $('.hovered2').css("opacity",0);
-      $('.hovered2').css("transform","scale(0,0)");
-   });*/
+   $('.badge-container').on("mouseleave",function(){
+      $(this).children(".unhovered").css("opacity",1);
+      $(this).children(".hovered").css("opacity",0);
+      $(this).children(".hovered").css("transform","scale(0,0)");
+   });
+   $(".header").scrollfire({
+      offset: 0,
+      topOffset: $(window).height()/2+100,
+      bottomOffset: $(window).height()/2-100,
+      onBottomIn: function(elm, distanceScrolled){
+         setActiveNav($(elm).attr("class").split(" ")[0]);
+      },
+      onTopIn: function(elm, distanceScrolled){
+         setActiveNav($(elm).attr("class").split(" ")[0]);
+      },
+      onBottomOut: function(elm, distanceScrolled){
+         if($(elm).attr("class").split(" ")[0] == "about")
+            setActiveNav(null);
+      }
+   })
 });
 
 function scrollTo(headerName){
-   $("html, body").animate({ scrollTop: $("."+headerName+"-header").position().top }, 500, "swing");
+   $("html, body").animate({ scrollTop: $("."+headerName+".header").position().top-50 }, 500, "swing");
+}
+
+function setActiveNav(sectionName){
+   $("#nav-mobile").children().removeClass('active');
+   $("."+sectionName+".nav").addClass('active');
 }
