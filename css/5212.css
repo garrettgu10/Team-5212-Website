@@ -1,7 +1,4 @@
 @media (max-width: 1000px) {
-  .badge{
-     display: none;
-  }
   .image-title{
      font-size: 35px;
   }

@@ -13,7 +13,7 @@ $(window).on("load", function(){
    $(".header").scrollfire({
       offset: 0,
       topOffset: $(window).height()/2+100,
-      bottomOffset: $(window).height()/2-100,
+      bottomOffset: 0,
       onBottomIn: function(elm, distanceScrolled){
          setActiveNav($(elm).attr("class").split(" ")[0]);
       },
