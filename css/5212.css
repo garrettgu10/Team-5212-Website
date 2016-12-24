@@ -1,3 +1,20 @@
+@media (max-width: 1000px) {
+  .badge{
+     display: none;
+  }
+  .image-title{
+     font-size: 35px;
+  }
+}
+
+.image-title{
+   position:absolute;
+   text-align:center;
+   width: 100%;
+   top:42%;
+   color:white;
+   font-weight: 300;
+}
 
 .badge {
   height: 200px;
@@ -21,4 +38,14 @@
    -ms-transform: scale(0.5, 0.5); /* IE 9 */
    -webkit-transform: scale(0.5, 0.5); /* Safari */
    transform: scale(0, 0);
+}
+
+.header{
+   font-weight: 300;
+}
+
+.donate-button{
+   font-weight:300;
+   color:black;
+   font-size:70px;
 }
