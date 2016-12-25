@@ -58,6 +58,12 @@
    width: 150px;
    height: 150px;
    box-shadow: 3px 3px 8px #888888;
+   transition: 1s;
+}
+
+.img-circle:hover{
+   width:200px;
+   height:200px;
 }
 
 .member-label{
