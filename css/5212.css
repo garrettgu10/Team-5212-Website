@@ -52,8 +52,22 @@
 
 .img-circle {
    border-radius: 50%;
+   -webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
    width: 200px;
    height: 200px;
+   border:5px solid;
+   box-shadow: 3px 3px 8px #888888;
+}
+@media (max-width: 1000px) {
+  .img-circle{
+     width:100px;
+     height:100px;
+  }
+}
+
+.exec-img{
+   border:5px solid green;
 }
 
 .members-container{
@@ -67,4 +81,8 @@
 
 .member-title{
    font-weight:300; font-size: 15px;
+}
+
+.member-section-label{
+   font-weight:300; font-size: 45px;
 }
