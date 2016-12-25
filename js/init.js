@@ -1,7 +1,7 @@
 
 $(window).on("load", function(){
    $(".badge.unhovered").css("transform","scale(1,1)");
-   $(".image-title").css({"opacity": 1, "top": "44%"});
+   $(".image-title").css({"opacity": 1, "top": "0%"});
 
    $('.badge-container').on("mouseenter",function(){
       $(this).children(".unhovered").css("opacity",0);
