@@ -109,6 +109,8 @@
    .members-container>br{
       display: none !important;
    }
+}
+@media (max-width: 599px){
    .members-container{
       overflow-x: scroll;
       white-space: nowrap;
