@@ -3,7 +3,7 @@
    <head>
       <title>Team 5212</title>
       <!--Import Google Icon Font-->
-      <!--<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
       <link type="text/css" rel="stylesheet" href="css/5212.css" />
@@ -21,16 +21,25 @@
       <div class="navbar-fixed">
          <nav>
             <div class="nav-wrapper green lighten-2">
-               <a href="#" class="brand-logo">&nbsp;&nbsp;Team 5212</a>
+               <a href="javascript:void(0);" class="brand-logo">&nbsp;&nbsp;Team 5212</a>
+
+               <a href="#" data-activates="nav-mobile-side" class="button-collapse"><i class="material-icons">menu</i></a>
                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                  <li class="about nav"><a href="#" onclick="javascript:scrollTo('about')">About</a></li>
-                  <li class="outreach nav"><a href="#" onclick="javascript:scrollTo('outreach')">Outreach</a></li>
-                  <li class="members nav"><a href="#" onclick="javascript:scrollTo('members')">Members</a></li>
+                  <li class="about nav"><a href="javascript:void(0);" onclick="javascript:scrollTo('about')">About</a></li>
+                  <li class="outreach nav"><a href="javascript:void(0);" onclick="javascript:scrollTo('outreach')">Outreach</a></li>
+                  <li class="members nav"><a href="javascript:void(0);" onclick="javascript:scrollTo('members')">Members</a></li>
                   <a class="waves-effect waves-light btn red" href="http://www.gofundme.com/tamsformers-robotics-team-2016">donate</a>
                </ul>
             </div>
          </nav>
+
       </div>
+      <ul id="nav-mobile-side" class="side-nav">
+         <li class="about nav"><a href="javascript:void(0);" onclick="javascript:scrollTo('about')">About</a></li>
+         <li class="outreach nav"><a href="javascript:void(0);" onclick="javascript:scrollTo('outreach')">Outreach</a></li>
+         <li class="members nav"><a href="javascript:void(0);" onclick="javascript:scrollTo('members')">Members</a></li>
+         <a class="waves-effect waves-light btn red" href="http://www.gofundme.com/tamsformers-robotics-team-2016">donate</a>
+      </ul>
 
 
 
@@ -41,7 +50,7 @@
             <h2 class="null header image-title">TAMSformers 2016-2017</h2>
 
             <span class="hide-on-med-and-down">
-               <a href="#" class="badge-container" onclick='javascript:scrollTo("about")'>
+               <a href="javascript:void(0);" class="badge-container" onclick='javascript:scrollTo("about")'>
                   <div class="badge unhovered" style="top:60%; left:60%">
                      <div class="badgetitle">About</div>
                   </div>
@@ -49,7 +58,7 @@
                      <div class="badgetitle" style="color:#000; padding-top: 83px; font-size:13px">Learn more about our team<br />in general</div>
                   </div>
                </a>
-               <a href="#" class="badge-container" onclick='javascript:scrollTo("outreach")'>
+               <a href="javascript:void(0);" class="badge-container" onclick='javascript:scrollTo("outreach")'>
                   <div class="badge unhovered" style="top:20%; left:20%">
                      <div class="badgetitle">Outreach</div>
                   </div>
@@ -57,7 +66,7 @@
                      <div class="badgetitle" style="color:#000; padding-top: 80px; font-size:13px">Learn more about our<br />community outreach endeavors</div>
                   </div>
                </a>
-               <a href="#" class="badge-container" onclick='javascript:scrollTo("members")'>
+               <a href="javascript:void(0);" class="badge-container" onclick='javascript:scrollTo("members")'>
                   <div class="badge unhovered" style="top:19%; left:70%">
                      <div class="badgetitle">Members</div>
                   </div>

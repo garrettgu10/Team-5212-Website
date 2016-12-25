@@ -2,6 +2,7 @@
 $(window).on("load", function(){
    $(".badge.unhovered").css("transform","scale(1,1)");
    $(".image-title").css({"opacity": 1, "top": "0%"});
+   $(".button-collapse").sideNav();
 
    $('.badge-container').on("mouseenter",function(){
       $(this).children(".unhovered").css("opacity",0);
@@ -32,6 +33,7 @@ $(window).on("load", function(){
 
 function scrollTo(headerName){
    $("html, body").animate({ scrollTop: $("."+headerName+".header").position().top-50 }, 500, "swing");
+   $('.button-collapse').sideNav('hide');
 }
 
 function setActiveNav(sectionName){
