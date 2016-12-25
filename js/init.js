@@ -37,6 +37,6 @@ function scrollTo(headerName){
 }
 
 function setActiveNav(sectionName){
-   $("#nav-mobile").children().removeClass('active');
+   $(".nav").removeClass('active');
    $("."+sectionName+".nav").addClass('active');
 }
