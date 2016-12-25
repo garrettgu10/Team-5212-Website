@@ -1,26 +1,3 @@
-@media only screen and (max-width: 800px) {
-  .badge{
-     -ms-transform: scale(0,0) !important;
-     -webkit-transform: scale(0,0) !important;
-     transform: scale(0, 0) !important;
-  }
-  .img-circle{
-     width:75px;
-     height:75px;
-  }
-  .member-label{
-     font-weight:300; font-size: 20px;
-  }
-
-  .member-title{
-     font-weight:300; font-size: 10px;
-  }
-
-  .member-section-label{
-     font-weight:300; font-size: 30px;
-  }
-}
-
 .members-container>div {
    display:inline-block;
    vertical-align:top;
@@ -83,10 +60,6 @@
    box-shadow: 3px 3px 8px #888888;
 }
 
-.members-container{
-
-}
-
 .member-label{
    font-weight:300; font-size: 30px;
 }
@@ -97,4 +70,28 @@
 
 .member-section-label{
    font-weight:300; font-size: 45px;
+}
+
+@media (max-width: 800px) {
+  .badge{
+     -ms-transform: scale(0,0) !important;
+     -webkit-transform: scale(0,0) !important;
+     transform: scale(0, 0) !important;
+  }
+  .img-circle{
+     width:75px;
+     height:75px;
+  }
+
+  .member-label{
+     font-weight:300; font-size: 20px;
+  }
+
+  .member-title{
+     font-weight:300; font-size: 10px;
+  }
+
+  .member-section-label{
+     font-weight:300; font-size: 30px;
+  }
 }
