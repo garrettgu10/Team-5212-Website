@@ -58,12 +58,6 @@
    height: 150px;
    box-shadow: 3px 3px 8px #888888;
 }
-@media (max-width: 1000px) {
-  .img-circle{
-     width:75px;
-     height:75px;
-  }
-}
 
 .members-container{
    border-spacing: 5px;
@@ -80,4 +74,22 @@
 
 .member-section-label{
    font-weight:300; font-size: 45px;
+}
+
+@media (max-width: 1000px) {
+  .img-circle{
+     width:75px;
+     height:75px;
+  }
+  .member-label{
+     font-weight:300; font-size: 20px;
+  }
+
+  .member-title{
+     font-weight:300; font-size: 10px;
+  }
+
+  .member-section-label{
+     font-weight:300; font-size: 30px;
+  }
 }
