@@ -88,6 +88,10 @@
      width:75px;
      height:75px;
   }
+  .img-circle:hover{
+     width:150px;
+     height:150px;
+  }
 
   .member-label{
      font-weight:300; font-size: 20px;
