@@ -105,3 +105,12 @@
      font-weight:300; font-size: 30px;
   }
 }
+@media (min-width:600px){
+   .members-container>br{
+      display: none !important;
+   }
+   .members-container{
+      overflow-x: scroll;
+      white-space: nowrap;
+   }
+}
