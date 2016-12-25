@@ -1,4 +1,5 @@
-.members-container>div {
+
+.members-row>div {
    display:inline-block;
    vertical-align:top;
    padding: 5px;
@@ -109,8 +110,10 @@
    .members-container>br{
       display: none !important;
    }
-   .members-container{
-      overflow-x: scroll;
-      white-space: nowrap;
+}
+@media (max-width:599px){
+   .members-row{
+      overflow-x:scroll;
+      white-space:nowrap;
    }
 }
