@@ -1,3 +1,8 @@
+.members-container{
+   overflow-x: scroll;
+   white-space: nowrap;
+}
+
 .members-container>div {
    display:inline-block;
    vertical-align:top;
@@ -38,7 +43,6 @@
 
 .hovered{
    background-color: rgba(255, 255, 255, 0.8);
-
 }
 
 .header{
