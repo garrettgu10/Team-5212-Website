@@ -66,6 +66,7 @@ $(window).on("load", function(){
    $(".shade").on("click", function(){
       $(this).animate({"opacity":0}, 500, "swing", function(){
          $(this).children(".img-circle").remove();
+         $(this).children(".real-shade").css("opacity", 0);
          $(this).css("display","none");
       });
    });
