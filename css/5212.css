@@ -1,8 +1,4 @@
-.members-row{
-   display:inline-block;
-}
-
-.members-row>div {
+.members-container>div {
    display:inline-block;
    vertical-align:top;
    padding: 5px;
@@ -71,6 +67,11 @@
    height:200px;
 }
 
+.img-circle.enlarged{
+   width:200px;
+   height:200px;
+}
+
 .member-label{
    font-weight:300; font-size: 30px;
 }
@@ -93,7 +94,13 @@
      width:75px;
      height:75px;
   }
+
   .img-circle:hover{
+     width:75px;
+     height:75px;
+  }
+
+  .img-circle.enlarged{
      width:75px;
      height:75px;
   }
@@ -109,17 +116,6 @@
   .member-section-label{
      font-weight:300; font-size: 30px;
   }
-}
-@media (min-width:600px){
-   .members-container>br{
-      display: none !important;
-   }
-}
-@media (max-width: 599px){
-   .members-row{
-      overflow-x: scroll;
-      white-space: nowrap;
-   }
 }
 
 .shade{

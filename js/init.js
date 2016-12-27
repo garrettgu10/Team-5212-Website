@@ -33,16 +33,33 @@ $(window).on("load", function(){
    $(".img-circle").on("click", function(){
       var clone = $(this).clone();
       var cloneDiameter = min($(window).height(),$(window).width())*0.8;
-      clone.css({
+      clone.addClass("enlarged");
+      clone.css({"transition":"0s",
+         "position": "absolute",
+         "left": $(this).position().left - $(window).scrollLeft(),
+         "top": $(this).position().top - $(window).scrollTop(),
+         "cursor": "zoom-out"});
+
+      /*clone.css({
          "position": "relative",
          "width": cloneDiameter+"px", "height": cloneDiameter+"px",
          "left": "50%", "top": "50%",
          "margin-left": -(cloneDiameter/2)+"px", "margin-top": -(cloneDiameter/2)+"px",
          "cursor": "zoom-out"
-      });
+      });*/
       $(".shade").css("display", "inline");
       $(".shade").append(clone);
       $(".shade").animate({"opacity":1}, 500, "swing");
+      clone.animate({
+            "width": cloneDiameter+"px", "height": cloneDiameter+"px",
+            "left": $(window).width()/2-cloneDiameter/2+"px",
+            "top": $(window).height()/2-cloneDiameter/2+"px"
+         }, function(){
+            $(this).css({
+               "position": "relative",
+               "left": "50%", "top": "50%",
+               "margin-left": -(cloneDiameter/2)+"px", "margin-top": -(cloneDiameter/2)+"px"});
+         });
    });
    $(".shade").on("click", function(){
       $(this).animate({"opacity":0}, 500, "swing", function(){
