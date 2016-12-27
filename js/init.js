@@ -47,9 +47,11 @@ $(window).on("load", function(){
          "margin-left": -(cloneDiameter/2)+"px", "margin-top": -(cloneDiameter/2)+"px",
          "cursor": "zoom-out"
       });*/
-      $(".shade").css("display", "inline");
+      $(".shade").css({
+         "display": "inline",
+         "opacity": 1});
       $(".shade").append(clone);
-      $(".shade").animate({"opacity":1}, 500, "swing");
+      $(".real-shade").animate({"opacity":1}, 500, "swing");
       clone.animate({
             "width": cloneDiameter+"px", "height": cloneDiameter+"px",
             "left": $(window).width()/2-cloneDiameter/2+"px",
