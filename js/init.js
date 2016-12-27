@@ -60,7 +60,7 @@ $(window).on("load", function(){
             $(this).css({
                "position": "relative",
                "left": "50%", "top": "50%",
-               "margin-left": -(cloneDiameter/2)+"px", "margin-top": -(cloneDiameter/2)+"px"});
+               "margin-left": -($(this).width()/2)+"px", "margin-top": -($(this).width()/2)+"px"});
          });
    });
    $(".shade").on("click", function(){
