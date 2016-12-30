@@ -1,0 +1,187 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <title>Team 5212</title>
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="css/5212.css" />
+
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+   </head>
+   <body>
+      <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script type="text/javascript" src="js/jquery.scrollfire.min.js"></script>
+      <script type="text/javascript" src="js/5212.js"></script>
+      <script>
+         var currentColor="light-blue";
+         var colors=["red","blue", "green", "yellow", "brown", "grey", "teal", "purple", "light-blue", "pink"];
+         (function(){
+             $('.donate').removeClass(currentColor);
+             currentColor= colors[Math.floor(Math.random()*colors.length)];
+             $('.donate').addClass(currentColor);
+             setTimeout(arguments.callee, 100);
+         })();
+      </script>
+      <div class="navbar-fixed">
+         <nav>
+            <div class="nav-wrapper green lighten-2">
+               <a href="javascript:void(0);" class="brand-logo"><span class="hide-on-med-and-down">&nbsp;&nbsp;</span>Team 5212</a>
+
+               <a href="#" data-activates="nav-mobile-side" class="button-collapse"><i class="material-icons">menu</i></a>
+               <ul id="nav-mobile" class="right hide-on-med-and-down">
+                  <li class="about nav"><a href="javascript:void(0);" onclick="javascript:scrollTo('about')">About</a></li>
+                  <li class="outreach nav"><a href="javascript:void(0);" onclick="javascript:scrollTo('outreach')">Outreach</a></li>
+                  <li class="members nav"><a href="javascript:void(0);" onclick="javascript:scrollTo('members')">Members</a></li>
+                  <a class="waves-effect waves-light btn donate" href="http://www.gofundme.com/tamsformers-robotics-team-2016">donate</a>
+               </ul>
+            </div>
+         </nav>
+
+      </div>
+      <ul id="nav-mobile-side" class="side-nav">
+         <li class="about nav"><a href="javascript:void(0);" onclick="javascript:scrollTo('about')">About</a></li>
+         <li class="outreach nav"><a href="javascript:void(0);" onclick="javascript:scrollTo('outreach')">Outreach</a></li>
+         <li class="members nav"><a href="javascript:void(0);" onclick="javascript:scrollTo('members')">Members</a></li>
+         <a class="waves-effect waves-light btn teal" href="http://www.gofundme.com/tamsformers-robotics-team-2016">donate</a>
+      </ul>
+
+      <div>
+         <div style="position:relative">
+            <img src="img/robot.jpg" style="width: 100%"></img>
+
+            <h2 class="null header image-title">TAMSformers 2017</h2>
+
+            <span class="all-badges">
+               <a href="javascript:void(0);" class="badge-container" onclick='javascript:scrollTo("about")'>
+                  <div class="badge unhovered" style="top:60%; left:60%">
+                     <div class="badgetitle">About</div>
+                  </div>
+                  <div class="badge hovered" style="opacity:0; top:60%; left:60%">
+                     <div class="badgetitle" style="color:#000; top: 83px; font-size:13px">Learn more about our team<br />in general</div>
+                  </div>
+               </a>
+               <a href="javascript:void(0);" class="badge-container" onclick='javascript:scrollTo("outreach")'>
+                  <div class="badge unhovered" style="top:20%; left:20%">
+                     <div class="badgetitle">Outreach</div>
+                  </div>
+                  <div class="badge hovered" style="opacity:0; top:20%; left:20%">
+                     <div class="badgetitle" style="color:#000; top: 80px; font-size:13px">Learn more about our<br />community outreach endeavors</div>
+                  </div>
+               </a>
+               <a href="javascript:void(0);" class="badge-container" onclick='javascript:scrollTo("members")'>
+                  <div class="badge unhovered" style="top:19%; left:70%">
+                     <div class="badgetitle">Members</div>
+                  </div>
+                  <div class="badge hovered" style="opacity:0; top:19%; left:70%">
+                     <div class="badgetitle" style="color:#000; top: 85px; font-size:13px">View our member photos</div>
+                  </div>
+               </a>
+               <a href="http://www.gofundme.com/tamsformers-robotics-team-2016" class="badge-container">
+                  <div class="badge unhovered" style="top:60%; left:11%">
+                     <div class="badgetitle">Donate</div>
+                  </div>
+                  <div class="badge hovered" style="opacity:0; top:60%; left:11%">
+                     <div class="badgetitle" style="color:#000; top: 85px; font-size:13px">Contribute to our team</div>
+                  </div>
+               </a>
+            </span>
+         </div>
+
+      </div>
+      <div class="container">
+         <h2 class="about header">About</h2>
+         <p class="flow-text">
+            Our team is an extracurricular group of students. We all go to the Texas Academy of Mathematics and Science. TAMS is a unique residential program for high school-aged Texas students who are high achievers and interested in mathematics and science. While living in McConnell Hall, students in this two-year program complete a rigorous academic curriculum of college coursework at the University of North Texas (UNT). Instruction is by regular university faculty. There are no high school courses taught, but students enjoy many of the activities of high school and the company of age mates who are intellectual peers.
+         </p>
+         <h2 class="outreach header">Outreach</h2>
+         <p class="flow-text">
+            Our robotics team greatly prioritizes integration with the district and regional community. As part of a school of students that have shown excellence and interest in the STEM field, we are invested in much more than engineering and science itself. For many of our teammates, the club is a chance to connect and help students explore STEM and truly have a chance to learn from it. For many of us, opportunities at our previous institutions for STEM were limited, if at all present. Now, we have the opportunity and obligation to educate, inspire and assist the rising generation of students in engineering.
+         </p>
+      </div>
+      <div class="parallax-container">
+         <div class="parallax"><img src="img/outreach.jpg" style="width:100%" /></div>
+      </div>
+      <div class="container">
+         <span class="img-caption">A team member demonstrates our 2016 competition robot at our second annual Science Adventures summer camp.</span>
+         <p class="flow-text">
+            Unfortunately, there are a few local schools that cannot afford extra science experiments in the curriculum. The Junior Engineering Technical Society or JETS club (the parent organization of TAMSformers) at TAMS, has a program to create and send STEM boxes to local elementary schools. These boxes contain small, informative experiments that children conduct. Each box caters to a specific scientific law or theory or phenomenon and comes with well-written explanations and pictures, so students can understand the science behind the principle being demonstrated. The boxes are also synchronized with each school's curriculum. Through coordinating with teachers, we maximize the students' knowledge about a subject: first in class, and then in firsthand experiments.
+            <br /> <br />We have been representing the TAMS program at many different events in the DFW region. We were at the Earth Day Event in April 2016, ...
+         </p>
+         <h2 class="members header">Members</h2>
+         <center>
+            <center class="member-section-label">Execs</center>
+            <div class="members-container">
+               <div>
+                  <img class="img-circle exec-img" src="photos/andrew.jpg"></img>
+                  <center class="member-label">Andrew</center>
+                  <center class="member-title">Engineering lead</center>
+               </div>
+               <div>
+                  <img class="img-circle exec-img" src="photos/david.jpg"></img>
+                  <center class="member-label">David</center>
+                  <center class="member-title">Team captain</center>
+               </div>
+               <div>
+                  <img class="img-circle exec-img" src="photos/shelby.jpg"></img>
+                  <center class="member-label">Shelby</center>
+                  <center class="member-title">Business lead</center>
+               </div>
+            </div>
+            <center class="member-section-label">Other Members</center>
+            <div class="members-container">
+               <div>
+                  <img class="img-circle" src="photos/alex.jpg"></img>
+                  <center class="member-label">Alex</center>
+                  <center class="member-title">&nbsp;</center>
+               </div>
+               <div>
+                  <img class="img-circle" src="photos/alyssa.jpg"></img>
+                  <center class="member-label">Alyssa</center>
+                  <center class="member-title">&nbsp;</center>
+               </div>
+               <div>
+                  <img class="img-circle" src="photos/arko.jpg"></img>
+                  <center class="member-label">Arko</center>
+                  <center class="member-title">&nbsp;</center>
+               </div>
+               <div>
+                  <img class="img-circle" src="photos/cedric.jpg"></img>
+                  <center class="member-label">Cedric</center>
+                  <center class="member-title">&nbsp;</center>
+               </div>
+               <div>
+                  <img class="img-circle" src="photos/josiah.jpg"></img>
+                  <center class="member-label">Josiah</center>
+                  <center class="member-title">&nbsp;</center>
+               </div>
+               <div>
+                  <img class="img-circle" src="photos/kj.jpg"></img>
+                  <center class="member-label">KJ</center>
+                  <center class="member-title">&nbsp;</center>
+               </div>
+               <div>
+                  <img class="img-circle" src="photos/lan.jpg"></img>
+                  <center class="member-label">Lan</center>
+                  <center class="member-title">&nbsp;</center>
+               </div>
+               <div>
+                  <img class="img-circle" src="photos/tobias.jpg"></img>
+                  <center class="member-label">Tobias</center>
+                  <center class="member-title">&nbsp;</center>
+               </div>
+            </div>
+         </center>
+         <center class="member-label">And many more...</center>
+         <br />
+         <br />
+      </div>
+
+      <center><a class="waves-effect waves-light btn-large blue" href="http://www.gofundme.com/tamsformers-robotics-team-2016">Click here to support us</a></center>
+      <br />
+      <br />
+   </body>
+   <div class="shade">
+      <div class="real-shade"><i class="material-icons close-button">close</i></div>
+   </div>
+</html>
