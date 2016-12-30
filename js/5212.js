@@ -4,6 +4,9 @@ $(window).on("load", function(){
    $(".image-title").css({"opacity": 1, "top": "0%"});
    $(".button-collapse").sideNav();
    $('.parallax').parallax();
+   var colors=["red","blue", "green", "teal", "light-blue"];
+   var donateColor = colors[Math.floor(Math.random()*colors.length)];
+   $('.donate').addClass(donateColor);
 
    $(".badge-container").on("mouseenter",function(){
       $(this).children(".unhovered").css("opacity",0);
@@ -41,13 +44,6 @@ $(window).on("load", function(){
          "top": $(this).position().top - $(window).scrollTop(),
          "cursor": "zoom-out"});
 
-      /*clone.css({
-         "position": "relative",
-         "width": cloneDiameter+"px", "height": cloneDiameter+"px",
-         "left": "50%", "top": "50%",
-         "margin-left": -(cloneDiameter/2)+"px", "margin-top": -(cloneDiameter/2)+"px",
-         "cursor": "zoom-out"
-      });*/
       $(".shade").css({
          "display": "inline",
          "opacity": 1});
