@@ -84,12 +84,23 @@
    font-weight:300; font-size: 45px;
 }
 
+.parallax-container {
+   height: 600px;
+}
+
+@media (max-width: 900px) {
+   .parallax-container {
+      height: 300px;
+   }
+}
+
 @media (max-width: 800px) {
   .badge{
      -ms-transform: scale(0,0) !important;
      -webkit-transform: scale(0,0) !important;
      transform: scale(0, 0) !important;
   }
+
   .img-circle{
      width:75px;
      height:75px;
@@ -148,4 +159,8 @@
    font-size: 60px;
    text-align: right;
    cursor: pointer;
+}
+
+.img-caption{
+   font-size: 16px;
 }
