@@ -2,22 +2,17 @@
 <html>
    <head>
       <title>Team 5212</title>
-      <!--Import Google Icon Font-->
       <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
       <link type="text/css" rel="stylesheet" href="css/5212.css" />
-      <link type="text/css" rel="stylesheet" href="css/jquery-ui.min.css" />
 
-      <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
    </head>
    <body>
-      <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
       <script type="text/javascript" src="js/jquery.scrollfire.min.js"></script>
-      <script type="text/javascript" src="js/init.js"></script>
+      <script type="text/javascript" src="js/5212.js"></script>
       <div class="navbar-fixed">
          <nav>
             <div class="nav-wrapper green lighten-2">
@@ -28,7 +23,7 @@
                   <li class="about nav"><a href="javascript:void(0);" onclick="javascript:scrollTo('about')">About</a></li>
                   <li class="outreach nav"><a href="javascript:void(0);" onclick="javascript:scrollTo('outreach')">Outreach</a></li>
                   <li class="members nav"><a href="javascript:void(0);" onclick="javascript:scrollTo('members')">Members</a></li>
-                  <a class="waves-effect waves-light btn red" href="http://www.gofundme.com/tamsformers-robotics-team-2016">donate</a>
+                  <a class="waves-effect waves-light btn red darken-1" href="http://www.gofundme.com/tamsformers-robotics-team-2016">donate</a>
                </ul>
             </div>
          </nav>
@@ -38,10 +33,8 @@
          <li class="about nav"><a href="javascript:void(0);" onclick="javascript:scrollTo('about')">About</a></li>
          <li class="outreach nav"><a href="javascript:void(0);" onclick="javascript:scrollTo('outreach')">Outreach</a></li>
          <li class="members nav"><a href="javascript:void(0);" onclick="javascript:scrollTo('members')">Members</a></li>
-         <a class="waves-effect waves-light btn red" href="http://www.gofundme.com/tamsformers-robotics-team-2016">donate</a>
+         <a class="waves-effect waves-light btn red darken-1" href="http://www.gofundme.com/tamsformers-robotics-team-2016">donate</a>
       </ul>
-
-
 
       <div>
          <div style="position:relative">
@@ -55,7 +48,7 @@
                      <div class="badgetitle">About</div>
                   </div>
                   <div class="badge hovered" style="opacity:0; top:60%; left:60%">
-                     <div class="badgetitle" style="color:#000; padding-top: 83px; font-size:13px">Learn more about our team<br />in general</div>
+                     <div class="badgetitle" style="color:#000; top: 83px; font-size:13px">Learn more about our team<br />in general</div>
                   </div>
                </a>
                <a href="javascript:void(0);" class="badge-container" onclick='javascript:scrollTo("outreach")'>
@@ -63,7 +56,7 @@
                      <div class="badgetitle">Outreach</div>
                   </div>
                   <div class="badge hovered" style="opacity:0; top:20%; left:20%">
-                     <div class="badgetitle" style="color:#000; padding-top: 80px; font-size:13px">Learn more about our<br />community outreach endeavors</div>
+                     <div class="badgetitle" style="color:#000; top: 80px; font-size:13px">Learn more about our<br />community outreach endeavors</div>
                   </div>
                </a>
                <a href="javascript:void(0);" class="badge-container" onclick='javascript:scrollTo("members")'>
@@ -71,7 +64,7 @@
                      <div class="badgetitle">Members</div>
                   </div>
                   <div class="badge hovered" style="opacity:0; top:19%; left:70%">
-                     <div class="badgetitle" style="color:#000; padding-top: 85px; font-size:13px">View our member photos</div>
+                     <div class="badgetitle" style="color:#000; top: 85px; font-size:13px">View our member photos</div>
                   </div>
                </a>
                <a href="http://www.gofundme.com/tamsformers-robotics-team-2016" class="badge-container">
@@ -79,7 +72,7 @@
                      <div class="badgetitle">Donate</div>
                   </div>
                   <div class="badge hovered" style="opacity:0; top:60%; left:11%">
-                     <div class="badgetitle" style="color:#000; padding-top: 85px; font-size:13px">Contribute to our team</div>
+                     <div class="badgetitle" style="color:#000; top: 85px; font-size:13px">Contribute to our team</div>
                   </div>
                </a>
             </span>
@@ -98,60 +91,75 @@
             <br /> <br />We have been representing the TAMS program at many different events in the DFW region. We were at the Earth Day Event in April 2016, ...
          </p>
          <h2 class="members header">Members</h2>
+         <center>
+            <center class="member-section-label">Execs</center>
+            <div class="members-container">
+               <div>
+                  <img class="img-circle exec-img" src="photos/andrew.jpg"></img>
+                  <center class="member-label">Andrew</center>
+                  <center class="member-title">Engineering lead</center>
+               </div>
+               <div>
+                  <img class="img-circle exec-img" src="photos/david.jpg"></img>
+                  <center class="member-label">David</center>
+                  <center class="member-title">Team captain</center>
+               </div>
+               <div>
+                  <img class="img-circle exec-img" src="photos/shelby.jpg"></img>
+                  <center class="member-label">Shelby</center>
+                  <center class="member-title">Business lead</center>
+               </div>
+            </div>
+            <center class="member-section-label">Others</center>
+            <div class="members-container">
+               <div>
+                  <img class="img-circle" src="photos/alex.jpg"></img>
+                  <center class="member-label">Alex</center>
+                  <center class="member-title">&nbsp;</center>
+               </div>
+               <div>
+                  <img class="img-circle" src="photos/alyssa.jpg"></img>
+                  <center class="member-label">Alyssa</center>
+                  <center class="member-title">&nbsp;</center>
+               </div>
+               <div>
+                  <img class="img-circle" src="photos/arko.jpg"></img>
+                  <center class="member-label">Arko</center>
+                  <center class="member-title">&nbsp;</center>
+               </div>
+               <div>
+                  <img class="img-circle" src="photos/cedric.jpg"></img>
+                  <center class="member-label">Cedric</center>
+                  <center class="member-title">&nbsp;</center>
+               </div>
+               <div>
+                  <img class="img-circle" src="photos/josiah.jpg"></img>
+                  <center class="member-label">Josiah</center>
+                  <center class="member-title">&nbsp;</center>
+               </div>
+               <div>
+                  <img class="img-circle" src="photos/kj.jpg"></img>
+                  <center class="member-label">KJ</center>
+                  <center class="member-title">&nbsp;</center>
+               </div>
+               <div>
+                  <img class="img-circle" src="photos/lan.jpg"></img>
+                  <center class="member-label">Lan</center>
+                  <center class="member-title">&nbsp;</center>
+               </div>
+               <div>
+                  <img class="img-circle" src="photos/tobias.jpg"></img>
+                  <center class="member-label">Tobias</center>
+                  <center class="member-title">&nbsp;</center>
+               </div>
+            </div>
+         </center>
+         <center class="member-label">And many more...</center>
+         <br />
+         <br />
       </div>
-      <center>
-         <center class="member-section-label">Execs</center>
-         <div class="members-container">
-            <div>
-               <img class="img-circle exec-img" src="photos/andrew.jpg"></img>
-               <center class="member-label">Andrew</center>
-               <center class="member-title">Engineering lead</center>
-            </div>
-            <div>
-               <img class="img-circle exec-img" src="photos/david.jpg"></img>
-               <center class="member-label">David</center>
-               <center class="member-title">Team captain</center>
-            </div>
-            <div>
-               <img class="img-circle exec-img" src="photos/shelby.jpg"></img>
-               <center class="member-label">Shelby</center>
-               <center class="member-title">Business lead</center>
-            </div>
-         </div>
-         <center class="member-section-label">Others</center>
-         <div class="members-container">
-            <div>
-               <img class="img-circle" src="photos/arko.jpg"></img>
-               <center class="member-label">Arko</center>
-               <center class="member-title">&nbsp;</center>
-            </div>
-            <div>
-               <img class="img-circle" src="photos/cedric.jpg"></img>
-               <center class="member-label">Cedric</center>
-               <center class="member-title">&nbsp;</center>
-            </div>
-            <div>
-               <img class="img-circle" src="photos/josiah.jpg"></img>
-               <center class="member-label">Josiah</center>
-               <center class="member-title">&nbsp;</center>
-            </div>
-            <div>
-               <img class="img-circle" src="photos/kj.jpg"></img>
-               <center class="member-label">KJ</center>
-               <center class="member-title">&nbsp;</center>
-            </div>
-            <div>
-               <img class="img-circle" src="photos/tobias.jpg"></img>
-               <center class="member-label">Tobias</center>
-               <center class="member-title">&nbsp;</center>
-            </div>
-         </div>
-      </center>
-      <center class="member-label">And many more...</center>
-      <br />
-      <br />
 
-      <center><a class="waves-effect waves-light btn-large blue" href="http://www.gofundme.com/tamsformers-robotics-team-2016">Click here to support us</a></center>
+      <center><a class="waves-effect waves-light btn-large red" href="http://www.gofundme.com/tamsformers-robotics-team-2016">Click here to support us</a></center>
       <br />
       <br />
    </body>
