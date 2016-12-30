@@ -4,9 +4,6 @@ $(window).on("load", function(){
    $(".image-title").css({"opacity": 1, "top": "0%"});
    $(".button-collapse").sideNav();
    $('.parallax').parallax();
-   var colors=["red","blue", "green", "teal", "light-blue"];
-   var donateColor = colors[Math.floor(Math.random()*colors.length)];
-   $('.donate').addClass(donateColor);
 
    $(".badge-container").on("mouseenter",function(){
       $(this).children(".unhovered").css("opacity",0);
