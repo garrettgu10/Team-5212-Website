@@ -16,6 +16,10 @@
    font-size: 50px;
 }
 
+.badge-container{
+   cursor: pointer;
+}
+
 .badge {
   height: 200px;
   width: 200px;
@@ -58,7 +62,7 @@
    width: 150px;
    height: 150px;
    box-shadow: 3px 3px 8px #888888;
-   transition: 0.7s;
+   transition: 0.4s;
    cursor: zoom-in;
 }
 

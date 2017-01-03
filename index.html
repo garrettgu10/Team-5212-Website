@@ -1,9 +1,10 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
    <head>
+      <meta charset="UTF-8">
       <title>Team 5212</title>
       <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen"/>
       <link type="text/css" rel="stylesheet" href="css/5212.css" />
 
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -23,7 +24,7 @@
                   <li class="about nav"><a href="javascript:void(0);" onclick="javascript:scrollTo('about')">About</a></li>
                   <li class="outreach nav"><a href="javascript:void(0);" onclick="javascript:scrollTo('outreach')">Outreach</a></li>
                   <li class="members nav"><a href="javascript:void(0);" onclick="javascript:scrollTo('members')">Members</a></li>
-                  <a class="waves-effect waves-light btn blue" href="http://www.gofundme.com/tamsformers-robotics-team-2016">donate</a>
+                  <li><a class="waves-effect waves-light btn blue" href="http://www.gofundme.com/tamsformers-robotics-team-2016">donate</a></li>
                </ul>
             </div>
          </nav>
@@ -33,49 +34,49 @@
          <li class="about nav"><a href="javascript:void(0);" onclick="javascript:scrollTo('about')">About</a></li>
          <li class="outreach nav"><a href="javascript:void(0);" onclick="javascript:scrollTo('outreach')">Outreach</a></li>
          <li class="members nav"><a href="javascript:void(0);" onclick="javascript:scrollTo('members')">Members</a></li>
-         <a class="waves-effect waves-light btn blue" href="http://www.gofundme.com/tamsformers-robotics-team-2016">donate</a>
+         <li><a class="waves-effect waves-light btn blue" href="http://www.gofundme.com/tamsformers-robotics-team-2016">donate</a></li>
       </ul>
 
       <div>
          <div style="position:relative">
-            <img src="img/robot.jpg" style="width: 100%"></img>
+            <img src="img/robot.jpg" alt="robot image" style="width: 100%">
 
             <h2 class="null header image-title">TAMSformers 2017</h2>
 
-            <span class="all-badges">
-               <a href="javascript:void(0);" class="badge-container" onclick='javascript:scrollTo("about")'>
+            <div class="all-badges">
+               <div class="badge-container" onclick='javascript:scrollTo("about")'>
                   <div class="badge unhovered" style="top:60%; left:60%">
                      <div class="badgetitle">About</div>
                   </div>
                   <div class="badge hovered" style="opacity:0; top:60%; left:60%">
                      <div class="badgetitle" style="color:#000; top: 83px; font-size:13px">Learn more about our team<br />in general</div>
                   </div>
-               </a>
-               <a href="javascript:void(0);" class="badge-container" onclick='javascript:scrollTo("outreach")'>
+               </div>
+               <div class="badge-container" onclick='javascript:scrollTo("outreach")'>
                   <div class="badge unhovered" style="top:20%; left:20%">
                      <div class="badgetitle">Outreach</div>
                   </div>
                   <div class="badge hovered" style="opacity:0; top:20%; left:20%">
                      <div class="badgetitle" style="color:#000; top: 80px; font-size:13px">Learn more about our<br />community outreach endeavors</div>
                   </div>
-               </a>
-               <a href="javascript:void(0);" class="badge-container" onclick='javascript:scrollTo("members")'>
+               </div>
+               <div class="badge-container" onclick='javascript:scrollTo("members")'>
                   <div class="badge unhovered" style="top:19%; left:70%">
                      <div class="badgetitle">Members</div>
                   </div>
                   <div class="badge hovered" style="opacity:0; top:19%; left:70%">
                      <div class="badgetitle" style="color:#000; top: 85px; font-size:13px">View our member photos</div>
                   </div>
-               </a>
-               <a href="http://www.gofundme.com/tamsformers-robotics-team-2016" class="badge-container">
+               </div>
+               <div onclick="javascript:window.location='http://www.gofundme.com/tamsformers-robotics-team-2016'" class="badge-container">
                   <div class="badge unhovered" style="top:60%; left:11%">
                      <div class="badgetitle">Donate</div>
                   </div>
                   <div class="badge hovered" style="opacity:0; top:60%; left:11%">
                      <div class="badgetitle" style="color:#000; top: 85px; font-size:13px">Contribute to our team</div>
                   </div>
-               </a>
-            </span>
+               </div>
+            </div>
          </div>
 
       </div>
@@ -90,7 +91,7 @@
          </p>
       </div>
       <div class="parallax-container">
-         <div class="parallax"><img src="img/outreach.jpg" style="width:100%" /></div>
+         <div class="parallax"><img src="img/outreach.jpg" style="width:100%" alt="A team member demonstrates our 2016 competition robot at our second annual Science Adventures summer camp." /></div>
       </div>
       <div class="container">
          <span class="img-caption">A team member demonstrates our 2016 competition robot at our second annual Science Adventures summer camp.</span>
@@ -99,94 +100,109 @@
             <br /> <br />We have been representing the TAMS program at many different events in the DFW region. We were at the Earth Day Event in April 2016, ...
          </p>
          <h2 class="members header">Members</h2>
-         <center>
-            <center class="member-section-label">Execs</center>
+         <div style="text-align:center">
+            <div style="text-align:center" class="member-section-label">Execs</div>
             <div class="members-container">
                <div>
-                  <img class="img-circle exec-img" src="photos/andrew.jpg"></img>
-                  <center class="member-label">Andrew</center>
-                  <center class="member-title">Engineering lead</center>
+                  <img class="img-circle exec-img" alt="member photo" src="photos/andrew.jpg">
+                  <div style="text-align:center" class="member-label">Andrew</div>
+                  <div style="text-align:center" class="member-title">Engineering lead</div>
                </div>
                <div>
-                  <img class="img-circle exec-img" src="photos/christian.jpg"></img>
-                  <center class="member-label">Christian</center>
-                  <center class="member-title">Electrical lead</center>
+                  <img class="img-circle exec-img" alt="member photo" src="photos/christian.jpg">
+                  <div style="text-align:center" class="member-label">Christian</div>
+                  <div style="text-align:center" class="member-title">Electrical lead</div>
                </div>
                <div>
-                  <img class="img-circle exec-img" src="photos/david.jpg"></img>
-                  <center class="member-label">David</center>
-                  <center class="member-title">Team captain</center>
+                  <img class="img-circle exec-img" alt="member photo" src="photos/david.jpg">
+                  <div style="text-align:center" class="member-label">David</div>
+                  <div style="text-align:center" class="member-title">Team captain</div>
                </div>
                <div>
-                  <img class="img-circle" src="photos/josiah.jpg"></img>
-                  <center class="member-label">Josiah</center>
-                  <center class="member-title">Student mentor</center>
+                  <img class="img-circle exec-img" alt="member photo" src="photos/emelyne.jpg">
+                  <div style="text-align:center" class="member-label">Emelyne</div>
+                  <div style="text-align:center" class="member-title">Volunteering lead</div>
                </div>
                <div>
-                  <img class="img-circle exec-img" src="photos/shelby.jpg"></img>
-                  <center class="member-label">Shelby</center>
-                  <center class="member-title">Business lead</center>
+                  <img class="img-circle exec-img" alt="member photo" src="photos/josiah.jpg">
+                  <div style="text-align:center" class="member-label">Josiah</div>
+                  <div style="text-align:center" class="member-title">Student mentor</div>
+               </div>
+               <div>
+                  <img class="img-circle exec-img" alt="member photo" src="photos/shelby.jpg">
+                  <div style="text-align:center" class="member-label">Shelby</div>
+                  <div style="text-align:center" class="member-title">Business lead</div>
                </div>
             </div>
-            <center class="member-section-label">Other Members</center>
+            <div style="text-align:center" class="member-section-label">Other Members</div>
             <div class="members-container">
                <div>
-                  <img class="img-circle" src="photos/alex.jpg"></img>
-                  <center class="member-label">Alex</center>
-                  <center class="member-title">&nbsp;</center>
+                  <img class="img-circle" alt="member photo" src="photos/alex.jpg">
+                  <div style="text-align:center" class="member-label">Alex</div>
+                  <div style="text-align:center" class="member-title">&nbsp;</div>
                </div>
                <div>
-                  <img class="img-circle" src="photos/alyssa.jpg"></img>
-                  <center class="member-label">Alyssa</center>
-                  <center class="member-title">&nbsp;</center>
+                  <img class="img-circle" alt="member photo" src="photos/alyssa.jpg">
+                  <div style="text-align:center" class="member-label">Alyssa</div>
+                  <div style="text-align:center" class="member-title">&nbsp;</div>
                </div>
                <div>
-                  <img class="img-circle" src="photos/arko.jpg"></img>
-                  <center class="member-label">Arko</center>
-                  <center class="member-title">&nbsp;</center>
+                  <img class="img-circle" alt="member photo" src="photos/arko.jpg">
+                  <div style="text-align:center" class="member-label">Arko</div>
+                  <div style="text-align:center" class="member-title">&nbsp;</div>
                </div>
                <div>
-                  <img class="img-circle" src="photos/cedric.jpg"></img>
-                  <center class="member-label">Cedric</center>
-                  <center class="member-title">&nbsp;</center>
+                  <img class="img-circle" alt="member photo" src="photos/cedric.jpg">
+                  <div style="text-align:center" class="member-label">Cedric</div>
+                  <div style="text-align:center" class="member-title">&nbsp;</div>
                </div>
                <div>
-                  <img class="img-circle" src="photos/kj.jpg"></img>
-                  <center class="member-label">KJ</center>
-                  <center class="member-title">&nbsp;</center>
+                  <img class="img-circle" alt="member photo" src="photos/jai.jpg">
+                  <div style="text-align:center" class="member-label">Jai</div>
+                  <div style="text-align:center" class="member-title">&nbsp;</div>
                </div>
                <div>
-                  <img class="img-circle" src="photos/lan.jpg"></img>
-                  <center class="member-label">Lan</center>
-                  <center class="member-title">&nbsp;</center>
+                  <img class="img-circle" alt="member photo" src="photos/john.jpg">
+                  <div style="text-align:center" class="member-label">John</div>
+                  <div style="text-align:center" class="member-title">&nbsp;</div>
                </div>
                <div>
-                  <img class="img-circle" src="photos/michelle.jpg"></img>
-                  <center class="member-label">Michelle</center>
-                  <center class="member-title">&nbsp;</center>
+                  <img class="img-circle" alt="member photo" src="photos/kj.jpg">
+                  <div style="text-align:center" class="member-label">KJ</div>
+                  <div style="text-align:center" class="member-title">&nbsp;</div>
                </div>
                <div>
-                  <img class="img-circle" src="photos/rasna.jpg"></img>
-                  <center class="member-label">Rasna</center>
-                  <center class="member-title">&nbsp;</center>
+                  <img class="img-circle" alt="member photo" src="photos/lan.jpg">
+                  <div style="text-align:center" class="member-label">Lan</div>
+                  <div style="text-align:center" class="member-title">&nbsp;</div>
                </div>
                <div>
-                  <img class="img-circle" src="photos/tobias.jpg"></img>
-                  <center class="member-label">Tobias</center>
-                  <center class="member-title">&nbsp;</center>
+                  <img class="img-circle" alt="member photo" src="photos/michelle.jpg">
+                  <div style="text-align:center" class="member-label">Michelle</div>
+                  <div style="text-align:center" class="member-title">&nbsp;</div>
+               </div>
+               <div>
+                  <img class="img-circle" alt="member photo" src="photos/rasna.jpg">
+                  <div style="text-align:center" class="member-label">Rasna</div>
+                  <div style="text-align:center" class="member-title">&nbsp;</div>
+               </div>
+               <div>
+                  <img class="img-circle" alt="member photo" src="photos/tobias.jpg">
+                  <div style="text-align:center" class="member-label">Tobias</div>
+                  <div style="text-align:center" class="member-title">&nbsp;</div>
                </div>
             </div>
-         </center>
-         <center class="member-label">And many more...</center>
+         </div>
+         <div style="text-align:center" class="member-label">And many more...</div>
          <br />
          <br />
       </div>
 
-      <center><a class="waves-effect waves-light btn-large blue darken-1" href="http://www.gofundme.com/tamsformers-robotics-team-2016">Click here to support us</a></center>
+      <div style="text-align:center"><a class="waves-effect waves-light btn-large blue darken-1" href="http://www.gofundme.com/tamsformers-robotics-team-2016">Click here to support us</a></div>
       <br />
       <br />
+      <div class="shade">
+         <div class="real-shade"><i class="material-icons close-button">close</i></div>
+      </div>
    </body>
-   <div class="shade">
-      <div class="real-shade"><i class="material-icons close-button">close</i></div>
-   </div>
 </html>
